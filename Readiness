@@ -1,0 +1,85 @@
+# TriCoach AI
+
+Building AI course project
+
+## Summary
+
+TriCoach AI is a simple training assistant for triathletes. It estimates daily training readiness based on recovery, sleep, fatigue, and recent workload, and then recommends whether the athlete should do the planned session, reduce intensity, or prioritize recovery.
+
+## Background
+
+Triathlon training combines swimming, cycling, and running, which makes fatigue management difficult. Athletes often struggle to decide whether they are truly ready for a hard session or whether they should reduce intensity and recover more.
+
+This problem is common especially for amateur athletes who train around work, school, and daily stress. Poor decisions can lead to accumulated fatigue, lower performance, or even injury.
+
+My motivation comes from my own interest in endurance sports and triathlon. I would like to have a simple system that helps make better day-to-day training decisions instead of relying only on emotion or guilt.
+
+## How is it used?
+
+The user enters simple daily variables such as:
+- sleep duration
+- subjective fatigue
+- muscle soreness
+- resting heart rate or perceived readiness
+- previous training load
+- planned workout type
+
+The AI then gives one of three recommendations:
+- do the planned training
+- do a lighter version
+- take a recovery / rest day
+
+This tool would be useful for amateur triathletes, runners, cyclists, or coaches who want a simple readiness check before training.
+
+## Data sources and AI methods
+
+The project could use small structured input data collected manually by the athlete, for example:
+- hours of sleep
+- previous day training duration
+- previous day training intensity
+- soreness score from 1 to 5
+- fatigue score from 1 to 5
+- resting heart rate compared to normal
+- discipline planned for today (swim / bike / run)
+
+Possible AI method:
+- classification
+
+The model would classify each day into one of three categories:
+- ready
+- caution
+- recovery
+
+At the beginning, the rules could be partly hand-made and later improved with real user data. A simple machine learning approach such as decision trees, logistic regression, or nearest neighbor classification could be enough.
+
+## Challenges
+
+This project does not directly measure true physiological readiness. It only estimates it from available inputs.
+
+Some limitations:
+- subjective data may be inconsistent
+- small personal datasets may be noisy
+- readiness can be affected by stress, illness, hydration, or menstrual cycle, which may not always be included
+- recommendations should not replace medical advice or professional coaching
+
+Ethically, the tool should be transparent and should never pressure the athlete into overtraining. It should support safe decision-making, not punish missed sessions.
+
+## What next?
+
+In the future, the project could be expanded by:
+- connecting to sports watches or training apps
+- using HRV, resting heart rate, and pace data automatically
+- adding weather conditions
+- learning personal patterns over time
+- suggesting which discipline is best for that day
+- generating weekly adjustments for triathlon plans
+
+To move forward, I would need:
+- more personal training data
+- better understanding of feature selection
+- basic app or dashboard design
+- possible collaboration with endurance coaches or sports scientists
+
+## Acknowledgments
+
+This idea was inspired by triathlon training practice, recovery-based coaching principles, and general AI methods for classification and decision support.
